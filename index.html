@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">  
+  <title>Document</title>
+  
+</head>
+<body>
+    <h1 class="c_white uppercase tx-center">
+        Calcola il prezzo del tuo biglietto
+      </h1>
+    
+      <!-- boxdati -->
+      <div class="box-dati tx-center">
+    
+        <!-- primariga -->
+        <div class="row ">
+          <form class="d_flex">
+            <div class="col-dati">
+              <!-- nome utente -->
+              <label for="nome-utente">Nome Cognome</label>
+              <input type="text" id="nome-utente" placeholder="Inserisci il tuo nome">
+            </div>
+            <!-- /nome utente -->
+    
+            <!-- km -->
+            <div class="col-dati">
+              <label for="kilometri">Km da percorrere</label>
+              <input type="number" id="kilometri" placeholder="Inserisci i km">
+            </div>
+            <!-- /km -->
+    
+            <!-- eta -->
+            <div class="col-dati">
+              <label for="fascia-eta">Inserisci l'età</label>
+              <select id="fascia-eta">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
+            </div>
+            <!-- eta -->
+          </form>
+        </div>
+        <!-- /primariga -->
+    
+        <!-- secondariga -->
+        <div class="row">
+          <button id="genera" class="btn">Genera</button>
+          <button id="annulla" class="btn">Annulla</button>
+        </div>
+        <!-- /secondariga -->
+    
+      </div>
+      <!-- /boxdati -->
+    
+    
+      <h2 class="c_white uppercase tx-center">
+        Il tuo biglietto
+      </h2>
+      
+      <!-- boxbiglietto -->
+      <div id="box-biglietto" class="hidden">
+    
+        <!-- primarow -->
+        <div class="row">
+          <h3 class="uppercase">Dettaglio passeggeri</h3>
+        </div>
+        <hr>
+        <!-- /primarow -->
+    
+        <!-- secondarow   -->
+        <div class="row">
+          <div class="nome-passeggero">
+            <h4 class="uppercase">
+              Nome passeggero:
+            </h4>
+            <div id="nome"></div>
+          </div>
+    
+          <div class="row output-dati">
+            <table class="tx-center">
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </tr>
+    
+              <tr>
+                <td id="offerta"></td>
+                <td id="carrozza"></td>
+                <td id="codice"></td>
+                <td id="costo"></td>
+              </tr>
+            </table>
+        </div>
+        <!-- /secondarow -->
+      
+      </div>
+      <!-- /boxbiglietto -->
+      <hr>
+    
+    
+  <script src="js/script.js"></script>
+</body>
+</html>

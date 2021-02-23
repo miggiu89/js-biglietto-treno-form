@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #6e2a43;
+}
+
+/* classi riutilizzabili */
+.c_white {
+  color: white;
+}
+
+.c_rosa {
+  color: #6e2a43;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tx-center {
+  text-align: center;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 8%;
+  padding: 10px 3px;
+  background-color: #cccccc;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: #b91450;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* titolo */
+h1 {
+  padding: 25px;
+}
+
+/* boxdati */
+.box-dati {
+  max-width: 1170px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.box-dati .row {
+  padding-bottom: 20px;
+
+}
+
+.box-dati .col-dati {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  line-height: 1.6;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input,
+select {
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #b91450;
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus {
+  background-color: #b91450;
+  color: lightgrey;
+}
+
+label {
+  color: #b91450;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  border: 1px solid #b91450;
+}
+
+
+
+h2 {
+  font-size: 30px;
+  padding: 20px 0 15px;
+}
+
+/* boxbiglietto */
+#box-biglietto {
+  max-width: 1170px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#box-biglietto .row {
+  display: flex;
+}
+
+#box-biglietto .row .nome-passeggero {
+  width: 25%;
+  background-color: #808080;
+  padding: 20px;
+}
+
+#box-biglietto .row .nome-passeggero h4 {
+  font-size: 25px;
+}
+
+#box-biglietto .row .nome-passeggero #nome {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+#box-biglietto .output-dati table {
+  border-spacing: 60px;
+}
+
+#box-biglietto .output-dati table th {
+  font-size: 20px;
+}
+
+
+
+
+/* classi per js  */
+.hidden {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.show {
+  opacity: 1;
+  transition: 0.4s;
